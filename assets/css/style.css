@@ -22,7 +22,7 @@
     color: #171717;
 }
 
-.margin-right-30{
+.margin-r-30{
     margin-right: 30px;
 }
 
@@ -30,29 +30,3 @@
     height: 20px;
     width: 14px;
 }
-/* 
-position: static;
-width: 51px;
-height: 26px;
-left: 0px;
-top: 0px;
-
-font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 17px;
-line-height: 25px;
-/* identical to box height */
-
-
-/* black */
-
-/* color: #171717; */
-
-
-/* Inside auto layout */
-
-/* flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 30px; */ */
