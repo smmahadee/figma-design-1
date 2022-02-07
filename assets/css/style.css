@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin:0 135px;
+}
+
+.navbar-brand img {
+    width: 64px;
+    height: 80px;
+    border-radius: 6px;
+}
+
+.navbar-nav {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #171717;
+}
+
+.margin-right-30{
+    margin-right: 30px;
+}
+
+.fa-phone {
+    height: 20px;
+    width: 14px;
+}
+/* 
+position: static;
+width: 51px;
+height: 26px;
+left: 0px;
+top: 0px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 25px;
+/* identical to box height */
+
+
+/* black */
+
+/* color: #171717; */
+
+
+/* Inside auto layout */
+
+/* flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 30px; */ */
