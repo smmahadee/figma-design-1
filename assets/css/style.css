@@ -85,8 +85,8 @@ body {
 }
 
 .main-image img {
-  width: 491.83px;
-  height: 550px;
+  max-width: 491.83px;
+  max-height: 550px;
 }
 
 /* work process section  */
@@ -109,16 +109,18 @@ body {
   margin-bottom: 35px;
 }
 .card {
-  width: 300px;
+  min-width: 300px;
   padding: 28px 5px;
   border: none;
   cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 92% 100%, 8% 100%);
+  box-shadow: 0px 15px 40px rgba(234, 107, 2, 0.3);
+  border-radius: 10px;
   transition: all 0.4s ease-out;
 }
 
 .card:hover {
-  clip-path: polygon(0 0, 100% 0, 92% 100%, 8% 100%);
-  border-radius: 10px;
+
   background: var(--primary-color);
   color: var(--color-white);
   box-shadow: 0px 15px 40px rgba(234, 107, 2, 0.3);
@@ -145,9 +147,6 @@ body {
 .card:hover .card-text {
   color: var(--color-white);
 }
-/* .card:hover .card-img-top {
-    filter: invert(99%) sepia(100%) saturate(12%) hue-rotate(240deg) brightness(104%) contrast(100%);
-} */
 
 .png-img {
   filter: invert(73%) sepia(14%) saturate(74%) hue-rotate(30deg) brightness(93%)
