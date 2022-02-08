@@ -1,11 +1,18 @@
 :root {
-  --primary-color: #171717;
+  --primary-color: #ea6b02;
+  --secondary-color: #171717;
+  --color-grey: #777777;
+  --color-white: #fff;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
 }
 
 /* header section  */
@@ -23,11 +30,10 @@
 }
 
 .navbar-nav {
-  font-family: 'Poppins';
   font-weight: 500;
   font-size: 17px;
   line-height: 25px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .margin-r-30 {
@@ -37,7 +43,7 @@
 .fa-phone {
   height: 20px;
   width: 14px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 /* main section  */
@@ -58,23 +64,20 @@
 .heading-section h1 {
   width: 514.91px;
   height: 140px;
-  font-family: Poppins;
-  font-style: normal;
   font-weight: bold;
   font-size: 70px;
   line-height: 70px;
-  color: #ea6b02;
+  color: var(--primary-color);
 }
 
 .heading-section p {
   width: 497.62px;
   height: 90px;
   font-family: Open Sans;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .main-image {
@@ -90,46 +93,42 @@
 #work-process {
   padding: 98px 0;
 }
+
 #work-process h1 {
-  font-family: Poppins;
-  font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 40px;
-  color: #ea6b02;
+  color: var(--primary-color);
   margin-bottom: 60px;
-  text-align: center;
 }
 
 .work-process-icon {
   width: 50px;
   height: 50px;
-  color: #777777;
+  color: var(--color-grey);
   margin-bottom: 35px;
 }
 .card {
   width: 300px;
   padding: 28px 5px;
   border: none;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
 }
+
 .card:hover {
-    clip-path: polygon(0 0, 100% 0, 92% 100%, 8% 100%);
-    border-radius: 10px;
-  position: absolute;
-  background: #ea6b02;
-  color: #fff;
+  clip-path: polygon(0 0, 100% 0, 92% 100%, 8% 100%);
+  border-radius: 10px;
+  background: var(--primary-color);
+  color: var(--color-white);
   box-shadow: 0px 15px 40px rgba(234, 107, 2, 0.3);
   z-index: 10;
 }
 
-
 .card-title {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  color: #171717;
+  color: var(--secondary-color);
   margin-bottom: 14px;
 }
 
@@ -138,17 +137,19 @@
   font-size: 17px;
   line-height: 28px;
   color: #4f4f4f;
-  width: 259.01px;
+  width: 250px;
   height: 56px;
 }
 
-.card:hover .card-title, .card:hover .card-text{
-    color: white;
+.card:hover .card-title,
+.card:hover .card-text {
+  color: var(--color-white);
 }
-.card:hover .card-img-top {
+/* .card:hover .card-img-top {
     filter: invert(99%) sepia(100%) saturate(12%) hue-rotate(240deg) brightness(104%) contrast(100%);
-}
+} */
 
 .png-img {
-    filter: invert(98%) sepia(2%) saturate(1464%) hue-rotate(222deg) brightness(69%) contrast(98%);
+  filter: invert(73%) sepia(14%) saturate(74%) hue-rotate(30deg) brightness(93%)
+    contrast(91%);
 }
